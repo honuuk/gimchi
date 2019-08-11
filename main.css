@@ -1,0 +1,291 @@
+#frame {
+    width: 100%;
+    min-width: 1200px;
+}
+
+#header h1,
+.ad-left,
+.ad {
+    display: table-cell;
+}
+
+#header h1 {
+    text-align: center;
+}
+
+#header h1 img {
+    height: 115px;
+}
+
+#header .ad-left {
+    padding-top: 3px;
+    text-align: left;
+}
+
+#header .ad {
+    padding-top: 3px;
+    text-align: right;
+}
+
+#menu1 {
+    width: 100%;
+    min-width: 1200px;
+    height: 55px;
+    background: #ff5c01;
+    text-align: center;
+}
+
+#menu1 ul {
+    padding-top: 17px;
+}
+
+
+/*  상단 여백 10px  */
+
+#menu1 ul li {
+    display: inline;
+    /*  세로나열을 가로나열로 변경 */
+    border-left: 1px solid #999;
+    /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+    font: bold 15px italic;
+    /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+    padding: 0 50px;
+    /* 각 메뉴 간격 */
+}
+
+#menu1 ul li:first-child {
+    border-left: none;
+}
+
+#menu1 ul li a:link {
+    color: wheat;
+    text-decoration: none;
+}
+
+#menu1 ul li a:visited {
+    color: wheat;
+    text-decoration: none;
+}
+
+#menu1 ul li a:hover {
+    color: wheat;
+    text-decoration: underline;
+}
+
+
+/*  상단 여백 10px  */
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    width: 100%;
+    min-width: 1200px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    margin-bottom: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#main-good-list h2 {
+    height: 68px;
+    text-align: center;
+    width: 100%;
+    min-width: 1200px;
+}
+
+#main-good-list ul {
+    list-style: none;
+    display: block;
+    width: 1200px;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+#main-good-list ul li.right {
+    float: right;
+}
+
+#bottom {
+    text-align: center;
+}
+
+#bottom img {
+    margin-top: 15px;
+    width: 80%;
+    min-width: 1200px;
+    height: 380px;
+}
+
+#footer img {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 1200px;
+    height: 200px;
+}
+
+#top_menu,
+#header {
+    width: 1200px;
+    margin: 20px auto;
+    height: 0;
+    padding: 0 0;
+}
+
+#top_menu .slogan {
+    float: left;
+    height: 0px;
+}
+
+#top_menu ul {
+    float: right;
+    list-style: none;
+    margin: 0px;
+}
+
+#top_menu ul li {
+    float: left;
+    padding: 0px 10px 0;
+    font-size: 12px;
+}
+
+#top_menu ul li a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#top_menu ul li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#top_menu ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#header {
+    display: table;
+}
