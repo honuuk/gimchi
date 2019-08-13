@@ -36,6 +36,7 @@ else
 	<link type="text/css" rel="stylesheet" href="./order.css">
 	<link type="text/css" rel="stylesheet" href="./join.css">
   <link type="text/css" rel="stylesheet" href="./mp_update.css">
+  <link type="text/css" rel="stylesheet" href="login.css">
  
 
 		<title>8조</title>

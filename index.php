@@ -12,18 +12,40 @@ require_once('top_view.php');
 		<!-- <h2><img src="./img_main/main-title01.png"></h2> -->
 		<h2>안전하고 믿을 수 있는 <span>맛과 정성이 가득한 돌재농원 </span>입니다.</h2>
             <ul style="width:1200px">
+			<?php
 
-            <li class="right"><a href="./index.php"><img src="./img_main/main-good02.png"></a></li>
-            <li class="left"><a href="./index.php"><img src="./img_main/main-good03.png"></a></li>
-            <li class="right"><a href="./index.php"><img src="./img_main/main-good04.png"></a></li>
-            <li class="left"><a href="./index.php"><img src="./img_main/main-good05.png"></a></li>
-            <li class="right"><a href="./index.php"><img src="./img_main/main-good06.png"></a></li>
-            <li class="left"><a href="./index.php"><img src="./img_main/main-good07.png"></a></li>
-            <li class="right"><a href="./index.php"><img src="./img_main/main-good10.png"></a></li>
-            <li class="left"><a href="./index.php"><img src="./img_main/main-good11.png"></a></li>
+//echo "start";
 
-			<!-- 열무김치 <li><a href="/goods/goods_view.php?goodsNo=1000000013"><img src="/data/skin/front/kimchi/img/etc/main-good08.png" /></a></li>
-            <li class="right"><a href="/goods/goods_view.php?goodsNo=1000000014"><img src="/data/skin/front/kimchi/img/etc/main-good09.png" /></a></li>-->
+$conn = mysqli_connect($servername,$username,$password_db, $dbname);
+
+if (mysqli_connect_errno($conn))
+{
+	echo "실패";
+}
+else
+{
+
+	$result = mysqli_query($conn, "select * From product Order by p_id");
+	$i=0;
+		while ($row = mysqli_fetch_array($result))
+		{
+			$i++;
+			$p_id = $row['p_id'];
+		  $s_id = $row['s_id'];
+		  $name = $row['name'];
+			$category1 = $row['category1'];
+			$category2 = $row['category2'];
+			$price = $row['price'];
+			$measure = $row['measure'];
+			$start_time = $row['start_time'];
+			$content = $row['content'];
+			$img_dir = $row['img_dir'];
+
+if($i%2==0){ ?> 
+<li class="left"><a href="./product_page.php?p_id=<?php echo $p_id;?>"><img src="./<?php echo $img_dir;?>"></a></li>
+ <?php  } else{  ?>
+<li class="right"><a href="./product_page.php?p_id=<?php echo $p_id;?>"><img src="./<?php echo $img_dir;?>"></a></li>
+  <?php } }  }?>         
             </ul>
 	</div>
 
