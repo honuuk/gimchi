@@ -3,39 +3,6 @@ require_once('top_view.php');
 ?>
 
 	<!-- Slideshow container -->
-<div class="slideshow-container" style="min-width:1200px;" >
-
-	<!-- Full-width images with number and caption text -->
-	<div class="mySlides fade" style="display:block;">
-	  <img src="./img_main/b_1.jpg" >
-	  <div class="text">돌재농원의 대표김치!!<br/>포기김치</div>
-	</div>
-
-	<div class="mySlides fade">
-	  <img src="./img_main/b_2.jpg" >
-	  <div class="text">남녀노소가 모두 좋아하는 <br/>아삭아삭 깍두기</div>
-	</div>
-
-	<div class="mySlides fade">
-	  <img src="./img_main/b_3.jpg" >
-	  <div class="text">깔끔한 맛으로 텁텁함을 날려버리는 <br/>백김치</div>
-	</div>
-
-	<!-- Next and previous buttons -->
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1)">&#10095;</a>
-	
-	<br>
-
-	<!-- The dots/circles -->
-	<div style="text-align:center">
-	<span class="dot" onclick="currentSlide(1)"></span>
-	<span class="dot" onclick="currentSlide(2)"></span>
-	<span class="dot" onclick="currentSlide(3)"></span>
-	</div>
-	<br>
-	<br>
-	</div>
 
 
 
