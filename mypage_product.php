@@ -155,19 +155,19 @@ else
 
 
     <form id="joinForm" name="joinForm" action="mypage_product_delete.php" method="get" enctype="multipart/form-data" >
-      <div id="join">
+      <div id="join" style="background-color:white;">
         <div class="top">
           <h2>마이페이지</h2>
 					<?php
 					if ($type == 'seller')
 					{
 					?>
-          <button type="button" class="mp-menu"><a href="mypage_product.php">등록상품조회</a></button>
+          <button type="button" class="mp-menu"><a href="mypage_product.php" style="color:black;">등록상품조회</a></button>
 					<?php
 					}
 					?>
-          <button type="button" class="mp-menu"><a href="mypage_order.php">주문배송조회</a></button>
-          <button type="button" class="mp-menu"><a href="mypage_personal.php">개인정보수정</a></button>
+          <button type="button" class="mp-menu"><a href="mypage_order.php" style="color:black;">주문배송조회</a></button>
+          <button type="button" class="mp-menu"><a href="mypage_personal.php" style="color:black;">개인정보수정</a></button>
         </div>
         <div id="join-form">
     			<div id="tit">

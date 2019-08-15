@@ -147,7 +147,7 @@ if (isset($_POST['submit']))
 
 ?>
 
-	<div id="join">
+	<div id="join" style="background-color:white;">
         <div class="top">
             <h2>회원가입</h2>
         </div>
